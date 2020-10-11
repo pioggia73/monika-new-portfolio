@@ -19,7 +19,13 @@ variables
 :root {
     /*      colors     */
     --clr-main-white: #f5f5f5;
+     --clr-main-grey: #ececec;
+    --clr-primary: #af9a7d;
     --clr-primary-5: #2caeba;
+    --clr-primary-9: hsl(185, 94%, 87%);
+    --clr-grey-5: hsl(210, 22%, 49%);
+     --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-red-dark: hsl(360, 67%, 44%);
 
     --ff-primary: "Open Sans", sans-serif;
     --transition: all 0.5s linear;
@@ -46,9 +52,8 @@ global styles
 };
 
 body { 
-    background: var(--clr-main-white);
+    /* background: var(--clr-main-white); */
     font-family: var(--ff-primary);
-    background: red;
     };
 
 html { font-size: 62.5% };
@@ -64,14 +69,22 @@ h4 {
 };
 
 h1 { font-size: 2.5rem; };
-h2 { font-size: 2rem; };
-h3 { font-size: 1.25rem; }
+h2 { font-size: 1.6rem; };
+h3 { font-size: 1rem; }
 h4 { font-size: 0.875rem; };
+
+ul { list-style-type: none; }
+
+a { 
+    text-decoration: none; 
+    color: inherit;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 800px) {
 
     h1 { font-size: 4rem; }
-    h2 { font-size: 2.5rem; }
+    h2 { font-size: 1.9rem; }
     h3 { font-size: 1.75rem; }
     h4 { font-size: 1rem; }
 
@@ -142,7 +155,7 @@ global classes
     font-weight: 700;
     -webkit-transition: var(--transition);
     transition: var(--transition);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border: 2px solid transparent;
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
