@@ -142,7 +142,6 @@ const Wrapper = styled.section`
             border-radius: var(--radius);
             box-shadow: var(--dark-shadow);
         };
-    };
 
         .project-info {
             grid-column: 5 / 12;
