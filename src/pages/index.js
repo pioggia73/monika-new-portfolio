@@ -21,8 +21,9 @@ export default ({data}) => {
 
 export const query = graphql`
   {
-    allAirtable(filter: {data: {featured: {eq: true}}, table: {eq: "projects"}}) {
+    allAirtable(filter: {table: {eq: "projects"}, data: {featured: {eq: true}}}) {
       nodes {
+        id
         data {
           description
           github_url
@@ -35,7 +36,6 @@ export const query = graphql`
                 fluid {
                   ...GatsbyImageSharpFluid
                 }
-                id
               }
             }
           }
