@@ -23,7 +23,6 @@ export const query = graphql`
       nodes {
         data {
           description
-          featured
           github_url
           name
           pageurl
