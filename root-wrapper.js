@@ -84,11 +84,11 @@ a {
 @media screen and (min-width: 800px) {
 
     h1 { font-size: 4rem; }
-    h2 { font-size: 1.9rem; }
+    h2 { font-size: 2rem; }
     h3 { font-size: 1.75rem; }
     h4 { font-size: 1rem; }
 
-    body { font-size: 1rem; }
+    /* body { font-size: 1rem; } */
     h1,
     h2,
     h3,
