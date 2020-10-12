@@ -137,7 +137,7 @@ const Wrapper = styled.section`
       border-radius: var(--radius);
       box-shadow: var(--dark-shadow);
     };
-    
+
     .project-info {
       border-radius: var(--radius);
       box-shadow: var(--dark-shadow);
@@ -146,11 +146,15 @@ const Wrapper = styled.section`
       grid-row: 1 / 1;
     };
   };
-
 `
 
 Project.propTypes = {
-
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  pageurl: PropTypes.string.isRequired,
+  github_url: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
+  stack: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Project;
